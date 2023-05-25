@@ -197,3 +197,97 @@ ul li a:hover{
     color: #d510eb;
 }
 
+/* for services ============================================================================== */
+.services{
+    position: relative;
+}
+.services h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.services .serv{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.des{
+    text-align: justify;
+    color: rgb(169, 169, 169);
+    font-size: small;
+}
+.box-slider h3{
+    font-weight: bold;
+    margin: 40px 0 30px 0;
+}
+.box-slider{
+    min-width: 300px ;
+    background-color: #ffffff;
+    border: #a800ba 2px solid;
+    box-shadow: -3px 4px 2px rgba(0, 0, 0, 0.238);
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 40px 20px;
+    transition: 0.8s ease;
+}
+.arrows i{
+    font-size: 2rem;
+    cursor: pointer;
+    border: 2px solid #000;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: -2px 4px 2px rgba(0, 0, 0, 0.375);
+    padding-top: 5px;
+    position: absolute;
+    top: 60%;
+    transition: 0.5s;
+}
+.arrows i:hover{
+    background-color: #8a2296;
+    color: white;
+}
+.arrR{
+    right: 100px;
+}
+.arrL{
+    left: 100px;
+}
+.services-slider{
+    width: 80%;
+    margin: 100px auto 0 auto;
+    /* box-shadow: -2px 4px 2px rgba(0, 0, 0, 0.375); */
+    /* background-color: bisque; */
+    overflow: hidden;
+    /* padding: 0 120px; */
+}
+.services-slider button{
+    color: #8a2296;
+    background-color: transparent;
+    border: none;
+}
+.gp{
+    display: flex;
+    align-items: center;
+}
+.gp i{
+    margin-top: 7px;
+    color: #8a2296;
+    transition: 0.7s;
+    transform: translateX(0);
+}
+.gp:hover i{
+    transform: translateX(-10px);
+}
+.dotted{
+    margin: auto;
+    line-height: 20px;
+}
+.dotted div{
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0 5px;
+    cursor: pointer;
+    /* border: 2px solid #8a2296;
+    color: white; */
+}
