@@ -466,3 +466,71 @@ ul li a:hover{
     color: #a800ba;
     background-color: #fff;
 }
+/* for blogs================================================= */
+.blogs{
+    padding-bottom: 50px;
+}
+.blogs h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.blogs p.text-center{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.box-blog{
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid #a800ba;
+    margin: 80px 20px;
+    padding: 40px 20px;
+}
+.box-blog span{
+    margin-bottom: 3rem;
+    display: inline-block;
+    color: rgb(193, 193, 193);
+}
+.box-blog .gp-btn-blog{
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.box-blog .gp-btn-blog button{
+    background-color: transparent;
+    border: none;
+}
+.gp-btn-blog i{
+    display: inline-block;
+    transition: 0.5s;
+}
+.gp-btn-blog:hover i{
+    transform: translateX(-10px);
+}
+.box-blog img{
+    border-radius: 10px ;
+    align-self: center;
+}
+.box-blog h3{
+    color: #d510eb;
+    font-weight: bold;
+}
+.box-blog p{
+    text-align: justify;
+    color: rgb(106, 106, 106);
+}
+.btn-read-more{
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 50px ;
+    width: 160px;
+    padding: 10px 30px;
+    margin: auto;
+    box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.375);
+    transition: 0.5s;
+}
+.btn-read-more:hover{
+    background-color: #a800ba;
+    color: white;
+}
