@@ -612,3 +612,17 @@ ul li a:hover{
     font-size: 2rem;
     font-weight: bold;
 }
+/* for footer =========================================== */
+footer{
+    background-color: #400047;
+    color: #fff;
+}
+.footer-icons i{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer-icons i:hover{
+    color: #de7be9;
+    transform: scale(1.3);
+}
