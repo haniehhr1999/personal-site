@@ -291,3 +291,94 @@ ul li a:hover{
     /* border: 2px solid #8a2296;
     color: white; */
 }
+/* for professional skills ===================== */
+.professional h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 100px;
+}
+.professional .para{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.professional-gp{
+    width: 80%;
+    margin: auto;
+}
+.onvan , .percent{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.darsad{
+    color: #8a2296;
+    font-size: 2rem;
+}
+.box-talent{
+    margin: 15px;
+    padding: 20px 15px;
+    border-bottom: 2px solid rgb(159, 159, 159);
+    position: relative;
+}
+.circles-prof{
+    width: 25px;
+    height: 25px;
+    background-color: #8a2296;
+    border: 3px solid #000;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -12.5px;
+    box-shadow: -2px 4px 2px rgba(0, 0, 0, 0.375);
+    z-index: 55;
+}
+.circle1{
+    right: 95% ;
+}
+.circle2{
+    right: 90% ;
+}
+.circle3{
+    right: 70% ;
+}
+.circle4{
+    right: 50% ;
+}
+.circle5{
+    right: 60% ;
+}
+.circle6{
+    right: 25% ;
+}
+.line{
+    position: absolute;
+    border-bottom: 4px solid #8a2296;
+}
+.line1{
+    width: 95%;
+    right: 0;
+    bottom: -2px;
+}
+.line2{
+    width: 90%;
+    right: 0;
+    bottom: -2px;
+}
+.line3{
+    width: 70%;
+    right: 0;
+    bottom: -2px;
+}
+.line4{
+    width: 50%;
+    right: 0;
+    bottom: -2px;
+}
+.line5{
+    width: 60%;
+    right: 0;
+    bottom: -2px;
+}
+.line6{
+    width: 25%;
+    right: 0;
+    bottom: -2px;
+}
