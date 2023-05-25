@@ -382,3 +382,87 @@ ul li a:hover{
     right: 0;
     bottom: -2px;
 }
+/* pricing ============================================================================== */
+.pricing h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 80px;
+    padding-top: 50px;
+}
+.pricing .para1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.box-price{
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.375);
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    padding: 0px 30px;
+    margin: 80px 0;
+}
+.blaack{
+    border: 2px solid rgb(0, 0, 0);
+    margin-right: 30px;
+    margin-left: 30px;
+    position: relative;
+}
+.blaack .popular{
+    border: 2px solid #000000;
+    border-radius: 50px;
+    background-color: #d510eb;
+    color: #fff;
+    padding: 0px 15px 5px 15px;
+    font-size: smaller;
+    font-weight: bold;
+    position: absolute;
+    top: -15.5px;
+    left: 20px;
+    box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.375);
+}
+.box-price span{
+    margin-top: 20px;
+    display: inline-block;
+}
+.box-price ul li{
+    list-style-image: url(assets/Untitled-3.png);
+}
+.gp-title-price{
+    align-items: center;
+    /* text-align: center; */
+    padding-top: 50px;
+}
+.gp-title-price span{
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 0;
+    display: inline-block;
+    font-size: 1.7rem;
+}
+.para2{
+    text-align: justify;
+    color: rgb(122, 122, 122);
+    margin-top: 30px;
+}
+.btn-con{
+    border: #000 2px solid;
+    border-radius: 50px;
+    padding: 2px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.btn-con button{
+    width: 100%;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 50px;
+    background-color: #a800ba;
+    color: white;
+    transition: 0.5s;
+}
+.btn-con button:hover{
+    color: #a800ba;
+    background-color: #fff;
+}
