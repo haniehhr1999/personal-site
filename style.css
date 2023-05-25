@@ -1,19 +1,21 @@
 @font-face {
     font-family: yekan;
-    src: url(assets/Yekan.woff);
+    src: url(assets/Yekan.ttf);
 }
 body{
     direction: rtl;
     font-family: yekan;
+    overflow-x: hidden;
 }
 h1{
     color: rgb(173, 0, 173);
     font-weight: bold;
     font-size: 5rem;
     margin-bottom: 30px;
+    /* -webkit-text-stroke: 2px #000; */
 }
 .general-introduction{
-    padding: 150px;
+    padding: 120px 150px;
 }
 .general-txt{
     font-size: 2rem;
@@ -120,3 +122,78 @@ h1{
     background: rgb(173, 0, 173);
     border-radius: 10px;
 }
+/* for header ============================================= */
+header{
+    padding: 20px 80px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 56;
+}
+.header-right img{
+    margin-bottom: 1rem;
+    margin: 0 1rem 1rem 1rem ;
+    cursor: pointer;
+}
+.header-right i{
+    margin: 0 10px;
+    font-size: 2rem;
+    color: #8a2296;
+    cursor: pointer;
+}
+.header-left{
+    cursor: pointer;
+}
+.menu-open{
+    width: 0;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 57;
+    box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.375);
+    transition: 1.2s;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu-open ul{
+    list-style: none;
+    padding: 100px 0;
+    margin: 0 80px 0 0 ;
+    opacity: 0;
+    transition: 1.5s;
+}
+.mdi-close{
+    font-size: 2rem;
+    position: absolute;
+    left: 40px;
+    padding-top: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.mdi-close:hover{
+    color: #d510eb;
+}
+.social-media{
+    margin-right: 80px;
+}
+.social-media i{
+    color: #d510eb;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+ul li a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+    display: inline-block;
+    margin: 7px 0;
+}
+ul li a:hover{
+    color: #d510eb;
+}
+
