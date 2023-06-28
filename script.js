@@ -240,22 +240,7 @@ var options = document.querySelectorAll('option')
 var corrects = document.querySelectorAll('.list-unstyled img')
 var cashs = document.querySelectorAll('.gp-title-price img')
 
-console.log(options);
-console.log(select.select);
-
-moon.addEventListener('click' , function(){
-    sun.classList.remove('d-none')
-    moon.classList.add('d-none')
-    me.src = 'assets/ax-bg-white.png'
-
-    bgLight.forEach(item0 =>{
-        item0.classList.remove('bg-white')
-        item0.classList.add('bgd-dark')
-    })
-    textBlack.forEach( item2 => {
-        item2.classList.remove('text-black')
-        item2.classList.add('text-white')
-    })
+function changMoon() {
     if (select.value == 'blue') {
         myLogo.src = 'assets/bg-blue-dark.png'
         corrects.forEach(element => {
@@ -400,22 +385,8 @@ moon.addEventListener('click' , function(){
                     t3.classList.add('brdr-banafsh-lit')
                 })
     }
-
-
-})
-sun.addEventListener('click' , function(){
-    sun.classList.add('d-none')
-    moon.classList.remove('d-none')
-
-    textBlack.forEach( item2 => {
-        item2.classList.add('text-black')
-        item2.classList.remove('text-white')
-    })
-    bgLight.forEach(item0 =>{
-        item0.classList.add('bg-white')
-        item0.classList.remove('bgd-dark')
-    })
-
+}
+function changSun(){
     if (select.value == 'blue') {
         me.src = 'assets/ax-blue.png'
                 myLogo.src = 'assets/bg-blue-lit.png'
@@ -566,7 +537,54 @@ sun.addEventListener('click' , function(){
                     t3.classList.add('brdr-banafsh-md')
                 })
     }
+}
 
+select.addEventListener('change' , function(){
+    if (moon.classList != 'd-none') {
+        changMoon()
+    }
+    if (sun.classList != 'd-none') {
+        changSun()
+    }
+})
+
+moon.addEventListener('click' , function(){
+    sun.classList.remove('d-none')
+    moon.classList.add('d-none')
+    me.src = 'assets/ax-bg-white.png'
+
+    bgLight.forEach(item0 =>{
+        item0.classList.remove('bg-white')
+        item0.classList.add('bgd-dark')
+    })
+    textBlack.forEach( item2 => {
+        item2.classList.remove('text-black')
+        item2.classList.add('text-white')
+    })
+    changMoon()
+
+    select.addEventListener('change' , function(){
+        me.src = 'assets/ax-bg-white.png'
+        changMoon()
+    })
+})
+
+sun.addEventListener('click' , function(){
+    sun.classList.add('d-none')
+    moon.classList.remove('d-none')
+
+    textBlack.forEach( item2 => {
+        item2.classList.add('text-black')
+        item2.classList.remove('text-white')
+    })
+    bgLight.forEach(item0 =>{
+        item0.classList.add('bg-white')
+        item0.classList.remove('bgd-dark')
+    })
+    changSun()
+    select.addEventListener('change' , function(){
+        changSun()
+    })
 })
 
 
