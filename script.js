@@ -239,6 +239,7 @@ var chooseColor = document.querySelectorAll('.choose-color')
 var options = document.querySelectorAll('option')
 var corrects = document.querySelectorAll('.list-unstyled img')
 var cashs = document.querySelectorAll('.gp-title-price img')
+var hovers = document.querySelectorAll('.hovers')
 
 function changMoon() {
     if (select.value == 'blue') {
@@ -249,21 +250,35 @@ function changMoon() {
         cashs.forEach(el2 => {
             el2.src = 'assets/cash-blue.png'
         });
-                banafshMedium.forEach(t1 =>{
-                    t1.classList.remove('red-color-md' , 'yellow-color-md', 'green-color-md', 'banafsh-color-md' ,'pink-color-md' ,'blue-color-lit')
-                    t1.classList.remove('red-color-lit' , 'yellow-color-lit', 'green-color-lit', 'banafsh-color-lit' ,'pink-color-lit')
-                    t1.classList.add('blue-color-lit')
-                })
-                bgBanafshMd.forEach(t2 =>{
-                    t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-green-md', 'bgd-yellow-md' , 'bgd-blue-md')
-                    t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit', 'bgd-red-lit' , 'bgd-banafsh-lit')
-                    t2.classList.add('bgd-blue-lit')
-                })
-                brdrBanafshMd.forEach( t3 =>{
-                    t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
-                    t3.classList.remove('brdr-banafsh-lit' , 'brdr-pink-lit', 'brdr-red-lit', 'brdr-yellow-lit', 'brdr-green-lit')
-                    t3.classList.add('brdr-blue-lit')
-                })
+        banafshMedium.forEach(t1 =>{
+            t1.classList.remove('red-color-md' , 'yellow-color-md', 'green-color-md', 'banafsh-color-md' ,'pink-color-md' ,'blue-color-lit')
+            t1.classList.remove('red-color-lit' , 'yellow-color-lit', 'green-color-lit', 'banafsh-color-lit' ,'pink-color-lit')
+            t1.classList.add('blue-color-lit')
+        })
+        bgBanafshMd.forEach(t2 =>{
+            t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-green-md', 'bgd-yellow-md' , 'bgd-blue-md')
+            t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit', 'bgd-red-lit' , 'bgd-banafsh-lit')
+            t2.classList.add('bgd-blue-lit')
+        })
+        brdrBanafshMd.forEach( t3 =>{
+            t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
+            t3.classList.remove('brdr-banafsh-lit' , 'brdr-pink-lit', 'brdr-red-lit', 'brdr-yellow-lit', 'brdr-green-lit')
+            t3.classList.add('brdr-blue-lit')
+        })
+        hovers.forEach(itemHover => {
+            itemHover.addEventListener('mouseenter' , function(){
+                itemHover.classList.add('bgd-blue-lit')
+                itemHover.classList.remove('bgd-dark')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit','bgd-red-lit' , 'bgd-banafsh-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+            itemHover.addEventListener('mouseleave' , function(){
+                itemHover.classList.add('bgd-dark')
+                itemHover.classList.remove('bg-white')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+        });
     }
     if (select.value == 'red') {
         myLogo.src = 'assets/bg-red-dark.png'
@@ -273,21 +288,35 @@ function changMoon() {
         cashs.forEach(el2 => {
             el2.src = 'assets/cash-red.png'
         });
-                banafshMedium.forEach(t1 =>{
-                    t1.classList.remove('yellow-color-md', 'blue-color-md', 'green-color-md', 'banafsh-color-md' ,'pink-color-md' ,'red-color-md')
-                    t1.classList.remove('yellow-color-lit', 'blue-color-lit', 'green-color-lit', 'banafsh-color-lit' ,'pink-color-lit')
-                    t1.classList.add('red-color-lit')
-                })
-                bgBanafshMd.forEach(t2 =>{
-                    t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-green-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-yellow-md')
-                    t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit', 'bgd-blue-lit', 'bgd-banafsh-lit')
-                    t2.classList.add('bgd-red-lit')
-                })
-                brdrBanafshMd.forEach( t3 =>{
-                    t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
-                    t3.classList.remove('brdr-banafsh-lit' , 'brdr-pink-lit', 'brdr-blue-lit', 'brdr-yellow-lit', 'brdr-green-lit')
-                    t3.classList.add('brdr-red-lit')
-                })
+        banafshMedium.forEach(t1 =>{
+            t1.classList.remove('yellow-color-md', 'blue-color-md', 'green-color-md', 'banafsh-color-md' ,'pink-color-md' ,'red-color-md')
+            t1.classList.remove('yellow-color-lit', 'blue-color-lit', 'green-color-lit', 'banafsh-color-lit' ,'pink-color-lit')
+            t1.classList.add('red-color-lit')
+        })
+        bgBanafshMd.forEach(t2 =>{
+            t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-green-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-yellow-md')
+            t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit', 'bgd-blue-lit', 'bgd-banafsh-lit')
+            t2.classList.add('bgd-red-lit')
+        })
+        brdrBanafshMd.forEach( t3 =>{
+            t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
+            t3.classList.remove('brdr-banafsh-lit' , 'brdr-pink-lit', 'brdr-blue-lit', 'brdr-yellow-lit', 'brdr-green-lit')
+            t3.classList.add('brdr-red-lit')
+        })
+        hovers.forEach(itemHover => {
+            itemHover.addEventListener('mouseenter' , function(){
+                itemHover.classList.add('bgd-red-lit')
+                itemHover.classList.remove('bgd-dark')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+            itemHover.addEventListener('mouseleave' , function(){
+                itemHover.classList.add('bgd-dark')
+                itemHover.classList.remove('bg-white')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+        });
     }
     if (select.value == 'yellow') {
         myLogo.src = 'assets/bg-yellow-dark.png'
@@ -297,21 +326,35 @@ function changMoon() {
         cashs.forEach(el2 => {
             el2.src = 'assets/cash-yellow.png'
         });
-                banafshMedium.forEach(t1 =>{
-                    t1.classList.remove('red-color-md' , 'blue-color-md', 'green-color-md', 'banafsh-color-md' ,'pink-color-md' ,'yellow-color-md')
-                    t1.classList.remove('red-color-lit' , 'blue-color-lit', 'green-color-lit', 'banafsh-color-lit' ,'pink-color-lit')
-                    t1.classList.add('yellow-color-lit')
-                })
-                bgBanafshMd.forEach(t2 =>{
-                    t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-green-md', 'bgd-blue-md','bgd-red-md' ,'bgd-yellow-md')
+        banafshMedium.forEach(t1 =>{
+            t1.classList.remove('red-color-md' , 'blue-color-md', 'green-color-md', 'banafsh-color-md' ,'pink-color-md' ,'yellow-color-md')
+            t1.classList.remove('red-color-lit' , 'blue-color-lit', 'green-color-lit', 'banafsh-color-lit' ,'pink-color-lit')
+            t1.classList.add('yellow-color-lit')
+        })
+        bgBanafshMd.forEach(t2 =>{
+            t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-green-md', 'bgd-blue-md','bgd-red-md' ,'bgd-yellow-md')
                     t2.classList.remove('bgd-pink-lit' , 'bgd-green-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit')
-                    t2.classList.add('bgd-yellow-lit')
-                })
-                brdrBanafshMd.forEach( t3 =>{
-                    t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
-                    t3.classList.remove('brdr-banafsh-lit' , 'brdr-pink-lit', 'brdr-red-lit', 'brdr-blue-lit', 'brdr-green-lit')
-                    t3.classList.add('brdr-yellow-lit')     
-                })
+            t2.classList.add('bgd-yellow-lit')
+        })
+        brdrBanafshMd.forEach( t3 =>{
+            t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
+            t3.classList.remove('brdr-banafsh-lit' , 'brdr-pink-lit', 'brdr-red-lit', 'brdr-blue-lit', 'brdr-green-lit')
+            t3.classList.add('brdr-yellow-lit')     
+        })
+        hovers.forEach(itemHover => {
+            itemHover.addEventListener('mouseenter' , function(){
+                itemHover.classList.add('bgd-yellow-lit')
+                itemHover.classList.remove('bgd-dark')
+                itemHover.classList.remove('bgd-pink-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+            itemHover.addEventListener('mouseleave' , function(){
+                itemHover.classList.add('bgd-dark')
+                itemHover.classList.remove('bg-white')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+        });
     }
     if (select.value == 'green') {
         myLogo.src = 'assets/bg-green-dark.png'
@@ -321,21 +364,35 @@ function changMoon() {
         cashs.forEach(el2 => {
             el2.src = 'assets/cash-green.png'
         });
-                banafshMedium.forEach(t1 =>{
-                    t1.classList.remove('red-color-md' , 'yellow-color-md', 'blue-color-md', 'banafsh-color-md' ,'pink-color-md' ,'green-color-md')
-                    t1.classList.remove('red-color-lit' , 'yellow-color-lit', 'blue-color-lit', 'banafsh-color-lit' ,'pink-color-lit')
-                    t1.classList.add('green-color-lit')
-                })
-                bgBanafshMd.forEach(t2 =>{
-                    t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
-                    t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit')
-                    t2.classList.add('bgd-green-lit')
-                })
-                brdrBanafshMd.forEach( t3 =>{
-                    t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
-                    t3.classList.remove('brdr-banafsh-lit' , 'brdr-pink-lit', 'brdr-red-lit', 'brdr-blue-lit', 'brdr-yellow-lit')
-                    t3.classList.add('brdr-green-lit')
-                })
+        banafshMedium.forEach(t1 =>{
+            t1.classList.remove('red-color-md' , 'yellow-color-md', 'blue-color-md', 'banafsh-color-md' ,'pink-color-md' ,'green-color-md')
+            t1.classList.remove('red-color-lit' , 'yellow-color-lit', 'blue-color-lit', 'banafsh-color-lit' ,'pink-color-lit')
+            t1.classList.add('green-color-lit')
+        })
+        bgBanafshMd.forEach(t2 =>{
+            t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit')
+            t2.classList.add('bgd-green-lit')
+        })
+        brdrBanafshMd.forEach( t3 =>{
+            t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
+            t3.classList.remove('brdr-banafsh-lit' , 'brdr-pink-lit', 'brdr-red-lit', 'brdr-blue-lit', 'brdr-yellow-lit')
+            t3.classList.add('brdr-green-lit')
+        })
+        hovers.forEach(itemHover => {
+            itemHover.addEventListener('mouseenter' , function(){
+                itemHover.classList.add('bgd-green-lit')
+                itemHover.classList.remove('bgd-dark')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+            itemHover.addEventListener('mouseleave' , function(){
+                itemHover.classList.add('bgd-dark')
+                itemHover.classList.remove('bg-white')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+        });
     }
     if (select.value == 'pink') {
         myLogo.src = 'assets/bg-pink-dark.png'
@@ -345,21 +402,35 @@ function changMoon() {
         cashs.forEach(el2 => {
             el2.src = 'assets/cash-pink.png'
         });
-                banafshMedium.forEach(t1 =>{
-                    t1.classList.remove('red-color-md' , 'yellow-color-md', 'blue-color-md', 'green-color-md', 'banafsh-color-md' ,'pink-color-md')
-                    t1.classList.remove('red-color-lit' , 'yellow-color-lit', 'blue-color-lit', 'green-color-lit', 'banafsh-color-lit')
-                    t1.classList.add('pink-color-lit')
-                })
-                bgBanafshMd.forEach(t2 =>{
-                    t2.classList.remove('bgd-banafsh-md' , 'bgd-yellow-md', 'bgd-green-md', 'bgd-blue-md', 'bgd-red-md' ,'bgd-pink-md')
-                    t2.classList.remove('bgd-yellow-lit', 'bgd-green-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit')
-                    t2.classList.add('bgd-pink-lit')
-                })
-                brdrBanafshMd.forEach( t3 =>{
-                    t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
-                    t3.classList.remove('brdr-banafsh-lit' , 'brdr-red-lit', 'brdr-blue-lit', 'brdr-yellow-lit', 'brdr-green-lit')
-                    t3.classList.add('brdr-pink-lit')
-                })
+        banafshMedium.forEach(t1 =>{
+            t1.classList.remove('red-color-md' , 'yellow-color-md', 'blue-color-md', 'green-color-md', 'banafsh-color-md' ,'pink-color-md')
+            t1.classList.remove('red-color-lit' , 'yellow-color-lit', 'blue-color-lit', 'green-color-lit', 'banafsh-color-lit')
+            t1.classList.add('pink-color-lit')
+        })
+        bgBanafshMd.forEach(t2 =>{
+            t2.classList.remove('bgd-banafsh-md' , 'bgd-yellow-md', 'bgd-green-md', 'bgd-blue-md', 'bgd-red-md' ,'bgd-pink-md')
+            t2.classList.remove('bgd-yellow-lit', 'bgd-green-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit')
+            t2.classList.add('bgd-pink-lit')
+        })
+        brdrBanafshMd.forEach( t3 =>{
+            t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
+            t3.classList.remove('brdr-banafsh-lit' , 'brdr-red-lit', 'brdr-blue-lit', 'brdr-yellow-lit', 'brdr-green-lit')
+            t3.classList.add('brdr-pink-lit')
+        })
+        hovers.forEach(itemHover => {
+            itemHover.addEventListener('mouseenter' , function(){
+                itemHover.classList.add('bgd-pink-lit')
+                itemHover.classList.remove('bgd-dark')
+                itemHover.classList.remove('bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+            itemHover.addEventListener('mouseleave' , function(){
+                itemHover.classList.add('bgd-dark')
+                itemHover.classList.remove('bg-white')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+        });
     }
     if (select.value == 'purple') {
         myLogo.src = 'assets/bg-banafsh-dark.png'
@@ -369,73 +440,115 @@ function changMoon() {
         cashs.forEach(el2 => {
             el2.src = 'assets/cash-banafsh.png'
         });
-                banafshMedium.forEach(t1 =>{
-                    t1.classList.remove('red-color-md' , 'yellow-color-md', 'blue-color-md', 'green-color-md', 'pink-color-md' ,'banafsh-color-md')
-                    t1.classList.remove('red-color-lit' , 'yellow-color-lit', 'blue-color-lit', 'green-color-lit', 'pink-color-lit')
-                    t1.classList.add('banafsh-color-lit')
-                })
-                bgBanafshMd.forEach(t2 =>{
-                    t2.classList.remove('bgd-pink-md' , 'bgd-yellow-md', 'bgd-green-md', 'bgd-blue-md','bgd-red-md' ,'bgd-banafsh-md')
-                    t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit', 'bgd-blue-lit','bgd-red-lit')
-                    t2.classList.add('bgd-banafsh-lit')
-                })
-                brdrBanafshMd.forEach( t3 =>{
-                    t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
-                    t3.classList.remove('brdr-pink-lit', 'brdr-red-lit', 'brdr-blue-lit', 'brdr-yellow-lit', 'brdr-green-lit')
-                    t3.classList.add('brdr-banafsh-lit')
-                })
+        banafshMedium.forEach(t1 =>{
+            t1.classList.remove('red-color-md' , 'yellow-color-md', 'blue-color-md', 'green-color-md', 'pink-color-md' ,'banafsh-color-md')
+            t1.classList.remove('red-color-lit' , 'yellow-color-lit', 'blue-color-lit', 'green-color-lit', 'pink-color-lit')
+            t1.classList.add('banafsh-color-lit')
+        })
+        bgBanafshMd.forEach(t2 =>{
+            t2.classList.remove('bgd-pink-md' , 'bgd-yellow-md', 'bgd-green-md', 'bgd-blue-md','bgd-red-md' ,'bgd-banafsh-md')
+            t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit', 'bgd-blue-lit','bgd-red-lit')
+            t2.classList.add('bgd-banafsh-lit')
+        })
+        brdrBanafshMd.forEach( t3 =>{
+            t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
+            t3.classList.remove('brdr-pink-lit', 'brdr-red-lit', 'brdr-blue-lit', 'brdr-yellow-lit', 'brdr-green-lit')
+            t3.classList.add('brdr-banafsh-lit')
+        })
+        hovers.forEach(itemHover => {
+            itemHover.addEventListener('mouseenter' , function(){
+                itemHover.classList.add('bgd-banafsh-lit')
+                itemHover.classList.remove('bgd-dark')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-green-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+            itemHover.addEventListener('mouseleave' , function(){
+                itemHover.classList.add('bgd-dark')
+                itemHover.classList.remove('bg-white')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+        });
     }
 }
 function changSun(){
     if (select.value == 'blue') {
         me.src = 'assets/ax-blue.png'
-                myLogo.src = 'assets/bg-blue-lit.png'
-                corrects.forEach(element => {
-                    element.src = 'assets/c-lit-blue.png'
-                });
-                cashs.forEach(el2 => {
-                    el2.src = 'assets/cash-blue.png'
-                });
-                banafshMedium.forEach(t1 =>{
-                    t1.classList.remove('red-color-lit' , 'yellow-color-lit', 'blue-color-lit', 'green-color-lit', 'banafsh-color-lit' ,'pink-color-lit')
-                    t1.classList.remove('red-color-md' , 'yellow-color-md', 'green-color-md', 'banafsh-color-md' ,'pink-color-md')
-                    t1.classList.add('blue-color-md')
-                })
-                bgBanafshMd.forEach(t2 =>{
-                    t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit')
-                    t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-green-md','bgd-yellow-md')
-                    t2.classList.add('bgd-blue-md')
-                })
-                brdrBanafshMd.forEach( t3 =>{
-                    t3.classList.remove('brdr-banafsh-lit' , 'brdr-pink-lit', 'brdr-red-lit', 'brdr-yellow-lit', 'brdr-green-lit' , 'brdr-blue-lit')
-                    t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-yellow-md', 'brdr-green-md')
-                    t3.classList.add('brdr-blue-md')
-                })
+        myLogo.src = 'assets/bg-blue-lit.png'
+        corrects.forEach(element => {
+            element.src = 'assets/c-lit-blue.png'
+        });
+        cashs.forEach(el2 => {
+            el2.src = 'assets/cash-blue.png'
+        });
+        banafshMedium.forEach(t1 =>{
+            t1.classList.remove('red-color-lit' , 'yellow-color-lit', 'blue-color-lit', 'green-color-lit', 'banafsh-color-lit' ,'pink-color-lit')
+            t1.classList.remove('red-color-md' , 'yellow-color-md', 'green-color-md', 'banafsh-color-md' ,'pink-color-md')
+            t1.classList.add('blue-color-md')
+        })
+        bgBanafshMd.forEach(t2 =>{
+            t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit')
+            t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-green-md','bgd-yellow-md')
+            t2.classList.add('bgd-blue-md')
+        })
+        brdrBanafshMd.forEach( t3 =>{
+            t3.classList.remove('brdr-banafsh-lit' , 'brdr-pink-lit', 'brdr-red-lit', 'brdr-yellow-lit', 'brdr-green-lit' , 'brdr-blue-lit')
+            t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-yellow-md', 'brdr-green-md')
+            t3.classList.add('brdr-blue-md')
+        })
+        hovers.forEach(itemHover => {
+            itemHover.addEventListener('mouseenter' , function(){
+                itemHover.classList.add('bgd-blue-md')
+                itemHover.classList.remove('bg-white')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit','bgd-red-lit' , 'bgd-banafsh-lit' , 'bgd-blue-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+            itemHover.addEventListener('mouseleave' , function(){
+                itemHover.classList.add('bg-white')
+                itemHover.classList.remove('bgd-dark')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+        });
     }
     if (select.value == 'red') {
         me.src = 'assets/ax-red.png'
-                myLogo.src = 'assets/bg-red-lit.png'
-                corrects.forEach(element => {
-                    element.src = 'assets/c-lit-red.png'
-                });
-                cashs.forEach(el2 => {
-                    el2.src = 'assets/cash-red.png'
-                });
-                banafshMedium.forEach(t1 =>{
-                    t1.classList.remove('red-color-lit' , 'yellow-color-lit', 'blue-color-lit', 'green-color-lit', 'banafsh-color-lit' ,'pink-color-lit')
-                    t1.classList.remove('yellow-color-md', 'blue-color-md', 'green-color-md', 'banafsh-color-md' ,'pink-color-md')
-                    t1.classList.add('red-color-md')
-                })
-                bgBanafshMd.forEach(t2 =>{
-                    t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit', 'bgd-blue-lit', 'bgd-red-lit' , 'bgd-banafsh-lit')
-                    t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-green-md', 'bgd-blue-md','bgd-yellow-md')
-                    t2.classList.add('bgd-red-md')
-                })
-                brdrBanafshMd.forEach( t3 =>{
-                    t3.classList.remove('brdr-banafsh-lit' , 'brdr-pink-lit', 'brdr-blue-lit', 'brdr-yellow-lit', 'brdr-green-lit' , 'brdr-red-lit')
-                    t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
-                    t3.classList.add('brdr-red-md')
-                })
+        myLogo.src = 'assets/bg-red-lit.png'
+        corrects.forEach(element => {
+            element.src = 'assets/c-lit-red.png'
+        });
+        cashs.forEach(el2 => {
+            el2.src = 'assets/cash-red.png'
+        });
+        banafshMedium.forEach(t1 =>{
+            t1.classList.remove('red-color-lit' , 'yellow-color-lit', 'blue-color-lit', 'green-color-lit', 'banafsh-color-lit' ,'pink-color-lit')
+            t1.classList.remove('yellow-color-md', 'blue-color-md', 'green-color-md', 'banafsh-color-md' ,'pink-color-md')
+            t1.classList.add('red-color-md')
+        })
+        bgBanafshMd.forEach(t2 =>{
+            t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit', 'bgd-blue-lit', 'bgd-red-lit' , 'bgd-banafsh-lit')
+            t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-green-md', 'bgd-blue-md','bgd-yellow-md')
+            t2.classList.add('bgd-red-md')
+        })
+        brdrBanafshMd.forEach( t3 =>{
+            t3.classList.remove('brdr-banafsh-lit' , 'brdr-pink-lit', 'brdr-blue-lit', 'brdr-yellow-lit', 'brdr-green-lit' , 'brdr-red-lit')
+            t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
+            t3.classList.add('brdr-red-md')
+        })
+        hovers.forEach(itemHover => {
+            itemHover.addEventListener('mouseenter' , function(){
+                itemHover.classList.add('bgd-red-md')
+                itemHover.classList.remove('bg-white')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit','bgd-red-lit' , 'bgd-banafsh-lit' , 'bgd-blue-lit')
+                itemHover.classList.remove('bgd-banafsh-md', 'bgd-blue-md' , 'bgd-pink-md', 'bgd-yellow-md' ,'bgd-green-md')
+            })
+            itemHover.addEventListener('mouseleave' , function(){
+                itemHover.classList.add('bg-white')
+                itemHover.classList.remove('bgd-dark')
+                itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+            })
+        });
     }
     if (select.value == 'yellow') {
         me.src = 'assets/ax-yellow.png'
@@ -461,6 +574,20 @@ function changSun(){
                     t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-green-md')
                     t3.classList.add('brdr-yellow-md')     
                 })
+                hovers.forEach(itemHover => {
+                    itemHover.addEventListener('mouseenter' , function(){
+                        itemHover.classList.add('bgd-yellow-md')
+                        itemHover.classList.remove('bg-white')
+                        itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit','bgd-red-lit' , 'bgd-banafsh-lit' , 'bgd-blue-lit')
+                        itemHover.classList.remove('bgd-banafsh-md', 'bgd-red-md', 'bgd-blue-md' , 'bgd-pink-md' ,'bgd-green-md')
+                    })
+                    itemHover.addEventListener('mouseleave' , function(){
+                        itemHover.classList.add('bg-white')
+                        itemHover.classList.remove('bgd-dark')
+                        itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                        itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+                    })
+                });
     }
     if (select.value == 'green') {
         me.src = 'assets/ax-green.png'
@@ -486,6 +613,20 @@ function changSun(){
                     t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md')
                     t3.classList.add('brdr-green-md')
                 })
+                hovers.forEach(itemHover => {
+                    itemHover.addEventListener('mouseenter' , function(){
+                        itemHover.classList.add('bgd-green-md')
+                        itemHover.classList.remove('bg-white')
+                        itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit','bgd-red-lit' , 'bgd-banafsh-lit' , 'bgd-blue-lit')
+                        itemHover.classList.remove('bgd-banafsh-md', 'bgd-red-md', 'bgd-blue-md' , 'bgd-pink-md' ,'bgd-yellow-md')
+                    })
+                    itemHover.addEventListener('mouseleave' , function(){
+                        itemHover.classList.add('bg-white')
+                        itemHover.classList.remove('bgd-dark')
+                        itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                        itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+                    })
+                });
     }
     if (select.value == 'pink') {
         me.src = 'assets/ax-pink.png'
@@ -511,6 +652,20 @@ function changSun(){
                     t3.classList.remove('brdr-banafsh-md' , 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
                     t3.classList.add('brdr-pink-md')
                 })
+                hovers.forEach(itemHover => {
+                    itemHover.addEventListener('mouseenter' , function(){
+                        itemHover.classList.add('bgd-pink-md')
+                        itemHover.classList.remove('bg-white')
+                        itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit','bgd-red-lit' , 'bgd-banafsh-lit' , 'bgd-blue-lit')
+                        itemHover.classList.remove('bgd-banafsh-md', 'bgd-yellow-md' , 'bgd-red-md', 'bgd-blue-md' , 'bgd-green-md')
+                    })
+                    itemHover.addEventListener('mouseleave' , function(){
+                        itemHover.classList.add('bg-white')
+                        itemHover.classList.remove('bgd-dark')
+                        itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                        itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+                    })
+                });
     }
     if (select.value == 'purple') {
         me.src = 'assets/ax-purple.png'
@@ -536,6 +691,20 @@ function changSun(){
                     t3.classList.remove('brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
                     t3.classList.add('brdr-banafsh-md')
                 })
+                hovers.forEach(itemHover => {
+                    itemHover.addEventListener('mouseenter' , function(){
+                        itemHover.classList.add('bgd-banafsh-md')
+                        itemHover.classList.remove('bg-white')
+                        itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit','bgd-red-lit' , 'bgd-banafsh-lit' , 'bgd-blue-lit')
+                        itemHover.classList.remove('bgd-pink-md' , 'bgd-yellow-md' , 'bgd-red-md', 'bgd-blue-md' , 'bgd-green-md')
+                    })
+                    itemHover.addEventListener('mouseleave' , function(){
+                        itemHover.classList.add('bg-white')
+                        itemHover.classList.remove('bgd-dark')
+                        itemHover.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit' ,'bgd-green-lit')
+                        itemHover.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
+                    })
+                });
     }
 }
 
@@ -586,6 +755,7 @@ sun.addEventListener('click' , function(){
         changSun()
     })
 })
+console.log("2" - "1");
 
 
 
