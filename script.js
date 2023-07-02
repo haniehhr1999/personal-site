@@ -224,22 +224,22 @@ mdi6.addEventListener('click' , function(){
 })
 
 // dark mode & light mode ==========================================================================
-var moon = document.querySelector('.moon')
-var sun = document.querySelector('.sun')
-var me = document.querySelector('.general-left img')
-var myLogo = document.querySelector('.header-left img')
-var select = document.querySelector('select')
+const moon = document.querySelector('.moon')
+const sun = document.querySelector('.sun')
+const me = document.querySelector('.general-left img')
+const myLogo = document.querySelector('.header-left img')
+const select = document.querySelector('select')
 
-var banafshMedium = document.querySelectorAll('.banafsh-color-md')
-var textBlack = document.querySelectorAll('.text-black')
-var bgLight = document.querySelectorAll('.bg-white')
-var bgBanafshMd = document.querySelectorAll('.bgd-banafsh-md')
-var brdrBanafshMd = document.querySelectorAll('.brdr-banafsh-md')
-var chooseColor = document.querySelectorAll('.choose-color')
-var options = document.querySelectorAll('option')
-var corrects = document.querySelectorAll('.list-unstyled img')
-var cashs = document.querySelectorAll('.gp-title-price img')
-var hovers = document.querySelectorAll('.hovers')
+const banafshMedium = document.querySelectorAll('.banafsh-color-md')
+const textBlack = document.querySelectorAll('.text-black')
+const bgLight = document.querySelectorAll('.bg-white')
+const bgBanafshMd = document.querySelectorAll('.bgd-banafsh-md')
+const brdrBanafshMd = document.querySelectorAll('.brdr-banafsh-md')
+const chooseColor = document.querySelectorAll('.choose-color')
+const options = document.querySelectorAll('option')
+const corrects = document.querySelectorAll('.list-unstyled img')
+const cashs = document.querySelectorAll('.gp-title-price img')
+const hovers = document.querySelectorAll('.hovers')
 
 function changMoon() {
     if (select.value == 'blue') {
@@ -755,7 +755,36 @@ sun.addEventListener('click' , function(){
         changSun()
     })
 })
-console.log("2" - "1");
+////////////////////////////////////////////////////////////////////////////////
+// fore change moon &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+// function forHovers(addClass){
+//     const arrayRemoveMd = ['bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md']
+//     const arrayRemoveLit = ['bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit','bgd-red-lit' , 'bgd-banafsh-lit']
+     
+//     hovers.forEach(itemHover => {
+//         itemHover.addEventListener('mouseenter' , function(){
+//             itemHover.classList.add(addClass)
+//             itemHover.classList.remove('bgd-dark')
+//             arrayRemoveLit.forEach(itemArrayRemoveLit => {
+//                 itemHover.classList.remove(itemArrayRemoveLit)
+//             });
+//             console.log(arrayRemoveLit);
+//             arrayRemoveMd.forEach(itemArrayRemoveMd => {
+//                 itemHover.classList.remove(itemArrayRemoveMd)
+//             });
+//         })
+//         itemHover.addEventListener('mouseleave' , function(){
+//             itemHover.classList.add('bgd-dark')
+//             itemHover.classList.remove('bg-white')
+//             arrayRemoveLit.push(addClass)
+//             console.log(arrayRemoveLit);
+//             arrayRemoveMd.forEach(itemArrayRemoveMd => {
+//                 itemHover.classList.remove(itemArrayRemoveMd)
+//             });
+//         })
+//     });
+// }
+// forHovers('bgd-red-lit')
 
 
 
