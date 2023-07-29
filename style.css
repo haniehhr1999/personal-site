@@ -62,15 +62,12 @@ h1{
     background-color: white;
     color: #AD00AD;
 }
-.general-right , .general-left{
-    flex: 1;
-}
 .general-left{
     position: relative;
 }
 .con1{
     position: absolute;
-    left: 0;
+    left: -80px;
     top: 50%;
 }
 .con2{
@@ -80,13 +77,13 @@ h1{
 }
 .general-left img{
     border-radius: 50%;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 .container-btn{
     border-radius: 50px;
     border: 2px solid #000;
     align-items: center;
-    padding: 0 40px;
+    /* padding: 0 40px; */
     width: 220px;
     background-color: white;
     box-shadow: -2px 4px 2px rgba(0, 0, 0, 0.375);
@@ -217,7 +214,9 @@ ul li a{
     margin: 40px 0 30px 0;
 }
 .box-slider{
+    /* align-items: stretch; */
     min-width: 300px ;
+    /* height: 321px; */
     background-color: #ffffff;
     border: #a800ba 2px solid;
     box-shadow: -3px 4px 2px rgba(0, 0, 0, 0.238);
@@ -455,11 +454,9 @@ ul li a{
 }
 .box-blog{
     background-color: #fff;
-    width: 300px;
     border-radius: 10px;
     border: 2px solid #a800ba;
-    margin: 80px 20px;
-    padding: 40px 20px;
+    box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.375);
 }
 .box-blog span{
     margin-bottom: 3rem;
@@ -475,7 +472,6 @@ ul li a{
     border: none;
 }
 .gp-btn-blog i{
-    display: inline-block;
     transition: 0.5s;
 }
 .gp-btn-blog:hover i{
@@ -755,23 +751,55 @@ footer{
 .pink{
     background-color: #ff00aa;
 }
-@media only screen and (min-width: 0) and (max-width: 571px){
-    .mypic{
-        width: 200px;
+.material-symbols-outlined {
+    font-size: 18px;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' -25,
+  'opsz' 20
+}
+.swiper-pagination{
+    bottom: -50px !important;
+    z-index: 66666 !important;
+}
+
+
+
+/* @media only screen and (min-width : 0){
+    .con1{
+        font-size: 12px;
+        position: absolute;
+        left: -80px;
+        top: 50%;
+    }
+    .con2{
+        font-size: 12px;
+        position: absolute;
+        right: 20px;
+        bottom: 50px;
     }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px){
-    .mypic{
-        width: 200px;
+@media only screen and (min-width : 576px) and (max-width : 768px){
+    .con1{
+        font-size: 12px;
+        position: absolute;
+        left: -80px;
+        top: 50%;
+    }
+    .con2{
+        font-size: 12px;
+        position: absolute;
+        right: 0;
+        bottom: -120px;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .mypic{
-        width: 350px;
-    }
+@media only screen and (min-width : 769px) and (max-width : 992px){
+    
 }
-@media only screen and (min-width: 992px) {
-    .mypic{
-        width: 500px;
-    }
+@media only screen and (min-width : 993px) and (max-width : 1200px){
+    
 }
+@media only screen and (min-width : 0){
+    
+} */

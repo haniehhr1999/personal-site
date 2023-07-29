@@ -17,44 +17,71 @@ closeMenu.addEventListener('click' , function(){
     menuRight.style.visibility = 'hidden'
 })
 // for sliders =========================================================================================
-var arrR = document.querySelector('.arrR')
-var arrL = document.querySelector('.arrL')
-var boxSlider = document.querySelectorAll('.box-slider')
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+    loopedSlides:40,
+    loopPreventSliding: true ,
+    slidesPerView: "3",
+    maxBackFaceHiddenSlides : "10",
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.t1',
+      prevEl: '.t2',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
 
-var x = 0
-var y = 0
-arrR.addEventListener('click' , function(){
-    if ( x == 0 ) {
-        x = 1
-        y += 300
-        boxSlider.forEach(item => {
-            item.style.transform = `translateX(${y}px)`
-        });
-    } else if ( x == 1){
-        x = 0
-        y += 300
-        boxSlider.forEach(item => {
-            item.style.transform = `translateX(${y}px)`
-        });
-    }
-})
+
+// var arrR = document.querySelector('.arrR')
+// var arrL = document.querySelector('.arrL')
+// var boxSlider = document.querySelectorAll('.box-slider')
+
+// var x = 0
+// var y = 0
+// arrR.addEventListener('click' , function(){
+//     if ( x == 0 ) {
+//         x = 1
+//         y += 300
+//         boxSlider.forEach(item => {
+//             item.style.transform = `translateX(${y}px)`
+//         });
+//     } else if ( x == 1){
+//         x = 0
+//         y += 300
+//         boxSlider.forEach(item => {
+//             item.style.transform = `translateX(${y}px)`
+//         });
+//     }
+// })
 
 
-arrL.addEventListener('click' , function(){
-    if ( x == 0 ) {
-        x = 1
-        y -= 300
-        boxSlider.forEach(item => {
-            item.style.transform = `translateX(${y}px)`
-        });
-    } else if ( x == 1){
-        x = 0
-        y -= 300
-        boxSlider.forEach(item => {
-            item.style.transform = `translateX(${y}px)`
-        });
-    }
-})
+// arrL.addEventListener('click' , function(){
+//     if ( x == 0 ) {
+//         x = 1
+//         y -= 300
+//         boxSlider.forEach(item => {
+//             item.style.transform = `translateX(${y}px)`
+//         });
+//     } else if ( x == 1){
+//         x = 0
+//         y -= 300
+//         boxSlider.forEach(item => {
+//             item.style.transform = `translateX(${y}px)`
+//         });
+//     }
+// })
 // for resume =========================================================================================
 var item1 = document.querySelector('.item1')
 var item2 = document.querySelector('.item2')
@@ -259,6 +286,8 @@ function changMoon() {
             t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-green-md', 'bgd-yellow-md' , 'bgd-blue-md')
             t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit', 'bgd-red-lit' , 'bgd-banafsh-lit')
             t2.classList.add('bgd-blue-lit')
+            t2.classList.remove('text-black')
+            t2.classList.add('text-white')
         })
         brdrBanafshMd.forEach( t3 =>{
             t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
@@ -297,6 +326,8 @@ function changMoon() {
             t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-green-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-yellow-md')
             t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit', 'bgd-blue-lit', 'bgd-banafsh-lit')
             t2.classList.add('bgd-red-lit')
+            t2.classList.remove('text-black')
+            t2.classList.add('text-white')
         })
         brdrBanafshMd.forEach( t3 =>{
             t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
@@ -333,8 +364,11 @@ function changMoon() {
         })
         bgBanafshMd.forEach(t2 =>{
             t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-green-md', 'bgd-blue-md','bgd-red-md' ,'bgd-yellow-md')
-                    t2.classList.remove('bgd-pink-lit' , 'bgd-green-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit')
+            t2.classList.remove('bgd-pink-lit' , 'bgd-green-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit')
             t2.classList.add('bgd-yellow-lit')
+            t2.classList.add('text-black')
+            t2.classList.remove('text-white')
+
         })
         brdrBanafshMd.forEach( t3 =>{
             t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
@@ -373,6 +407,8 @@ function changMoon() {
             t2.classList.remove('bgd-banafsh-md' , 'bgd-pink-md', 'bgd-red-md', 'bgd-blue-md','bgd-yellow-md' ,'bgd-green-md')
             t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit')
             t2.classList.add('bgd-green-lit')
+            t2.classList.remove('text-black')
+            t2.classList.add('text-white')
         })
         brdrBanafshMd.forEach( t3 =>{
             t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
@@ -411,6 +447,8 @@ function changMoon() {
             t2.classList.remove('bgd-banafsh-md' , 'bgd-yellow-md', 'bgd-green-md', 'bgd-blue-md', 'bgd-red-md' ,'bgd-pink-md')
             t2.classList.remove('bgd-yellow-lit', 'bgd-green-lit', 'bgd-blue-lit','bgd-red-lit' , 'bgd-banafsh-lit')
             t2.classList.add('bgd-pink-lit')
+            t2.classList.remove('text-black')
+            t2.classList.add('text-white')
         })
         brdrBanafshMd.forEach( t3 =>{
             t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
@@ -449,6 +487,8 @@ function changMoon() {
             t2.classList.remove('bgd-pink-md' , 'bgd-yellow-md', 'bgd-green-md', 'bgd-blue-md','bgd-red-md' ,'bgd-banafsh-md')
             t2.classList.remove('bgd-pink-lit' , 'bgd-yellow-lit', 'bgd-green-lit', 'bgd-blue-lit','bgd-red-lit')
             t2.classList.add('bgd-banafsh-lit')
+            t2.classList.remove('text-black')
+            t2.classList.add('text-white')
         })
         brdrBanafshMd.forEach( t3 =>{
             t3.classList.remove('brdr-banafsh-md' , 'brdr-pink-md', 'brdr-red-md', 'brdr-blue-md', 'brdr-yellow-md', 'brdr-green-md')
