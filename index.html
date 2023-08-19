@@ -39,29 +39,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-white">
-    <header class="d-flex justify-content-between align-items-center bg-white">
-      <div
-        class="header-right d-flex justify-content-between align-items-center"
-      >
+
+
+    
+    <header class="d-flex justify-content-between align-items-center bg-white px-lg-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="header-right d-flex justify-content-between align-items-center" >
+              <i class="mdi mdi-menu banafsh-color-md"></i>
+              <label for="select">
+                <i class="mdi mdi-palette banafsh-color-md"></i>
+              </label>
+              <span role="button" class="material-symbols-outlined banafsh-color-md sun d-none" >sunny</span >
+              <span role="button" class="material-symbols-outlined banafsh-color-md moon" >dark_mode</span >
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="header-left">
+              <img src="assets/bg-banafsh-lit.png" alt="" width="200px" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="header-right d-flex justify-content-between align-items-center" >
         <i class="mdi mdi-menu banafsh-color-md"></i>
         <label for="select">
           <i class="mdi mdi-palette banafsh-color-md"></i>
         </label>
-        <span
-          role="button"
-          class="material-symbols-outlined banafsh-color-md sun d-none"
-          >sunny</span
-        >
-        <span
-          role="button"
-          class="material-symbols-outlined banafsh-color-md moon"
-          >dark_mode</span
-        >
+        <span role="button" class="material-symbols-outlined banafsh-color-md sun d-none" >sunny</span >
+        <span role="button" class="material-symbols-outlined banafsh-color-md moon" >dark_mode</span >
       </div>
       <div class="header-left">
         <img src="assets/bg-banafsh-lit.png" alt="" width="200px" />
-      </div>
+      </div> -->
     </header>
+
+
     <div class="pallete-open">
       <select name="" id="select" class="bg-white text-black position-fixed">
         <option value="purple" selected>purple</option>
@@ -72,6 +86,8 @@
         <option value="pink">pink</option>
       </select>
     </div>
+
+
     <div class="menu-open bg-white">
       <i class="mdi mdi-close text-black"></i>
       <ul>
@@ -95,7 +111,7 @@
     <div class="general-introduction">
       <div class="container">
         <div class="row gy-5">
-          <div class="col-12 col-sm-12 col-md-6 px-5">
+          <div class="col-12 col-sm-12 col-lg-6 px-5">
             <div class="general-right">
               <p class="general-txt text-black">
                 سلام! خوش آمدید به وبسایت شخصی
@@ -127,11 +143,11 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 px-5">
+          <div class="col-12 col-sm-12 col-lg-6 px-5">
             <div class="general-left w-100">
               <img src="assets/ax-purple.png" alt="" width="100%" />
               <div
-                class="container-btn px-2 py-1 con1 d-none d-lg-inline-flex justify-content-center bg-white"
+                class="container-btn px-2 py-1 con1 d-inline-flex justify-content-center bg-white"
               >
                 <div class="conleft">
                   <span class="nums banafsh-color-md">3</span>
@@ -142,7 +158,7 @@
                 </div>
               </div>
               <div
-                class="container-btn px-2 py-1 con2 d-none d-lg-inline-flex justify-content-center bg-white"
+                class="container-btn px-2 py-1 con2 d-inline-flex justify-content-center bg-white"
               >
                 <div class="conleft">
                   <span class="nums banafsh-color-md">12</span>
@@ -426,7 +442,7 @@
         <div class="row g-3">
           <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-3 py-2">
             <div class="box-talent position-relative">
-              <div class="gp-title d-flex justify-content-between">
+              <div class="gp-title d-flex justify-content-between align-items-center">
                 <span class="onvan text-black">HTML</span>
                 <div class="percent">
                   <span class="adad text-black">100</span>
@@ -443,7 +459,7 @@
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-3 py-2">
             <div class="box-talent position-relative">
-              <div class="gp-title d-flex justify-content-between">
+              <div class="gp-title d-flex justify-content-between align-items-center">
                 <span class="onvan text-black">CSS</span>
                 <div class="percent">
                   <span class="adad text-black">95</span>
@@ -460,7 +476,7 @@
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-3 py-2">
             <div class="box-talent position-relative">
-              <div class="gp-title d-flex justify-content-between">
+              <div class="gp-title d-flex justify-content-between align-items-center">
                 <span class="onvan text-black">JAVASCRIPT</span>
                 <div class="percent">
                   <span class="adad text-black">70</span>
@@ -477,7 +493,7 @@
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-3 py-2">
             <div class="box-talent position-relative">
-              <div class="gp-title d-flex justify-content-between">
+              <div class="gp-title d-flex justify-content-between align-items-center">
                 <span class="onvan text-black">REACT</span>
                 <div class="percent">
                   <span class="adad text-black">50</span>
@@ -494,7 +510,7 @@
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-3 py-2">
             <div class="box-talent position-relative">
-              <div class="gp-title d-flex justify-content-between">
+              <div class="gp-title d-flex justify-content-between align-items-center">
                 <span class="onvan text-black">GIT/GITHUB</span>
                 <div class="percent">
                   <span class="adad text-black">60</span>
@@ -511,7 +527,7 @@
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-3 py-2">
             <div class="box-talent position-relative">
-              <div class="gp-title d-flex justify-content-between">
+              <div class="gp-title d-flex justify-content-between align-items-center">
                 <span class="onvan text-black">PHP</span>
                 <div class="percent">
                   <span class="adad text-black">25</span>
@@ -530,13 +546,163 @@
       </div>
     </div>
 
-    <div class="pricing">
+    <div class="pricing py-5">
       <h2 class="text-center text-black">لیست قیمت</h2>
       <p class="text-center para1">
         <span class="banafsh-color-md">قیمت گزاری</span>
         <span class="text-black">های من</span>
       </p>
-      <div class="price-gp d-flex flex-wrap justify-content-center">
+
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-12 col-sm-12 col-md-4 px-lg-3">
+            <div class="box-price">
+              <span class="text-black">فریلنسری</span>
+              <div class="gp-title-price d-flex align-items-center">
+                <img src="assets/cash.png" alt="" width="35px" />
+                <span class="cost text-black">یک میلیون</span>
+              </div>
+              <p class="para2">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است.
+              </p>
+              <ul class="list-unstyled">
+                <div class="pedar8 d-flex align-items-center">
+                  <img
+                    src="assets/c-lit-banafsh.png"
+                    alt=""
+                    width="16px"
+                    height="16px"
+                    class="ms-1"
+                  />
+                  <li class="text-black">طراحی برند</li>
+                </div>
+                <div class="pedar8 d-flex align-items-center">
+                  <img
+                    src="assets/c-lit-banafsh.png"
+                    alt=""
+                    width="16px"
+                    height="16px"
+                    class="ms-1"
+                  />
+                  <li class="text-black">توسعه وب</li>
+                </div>
+                <div class="pedar8 d-flex align-items-center">
+                  <img
+                    src="assets/c-lit-banafsh.png"
+                    alt=""
+                    width="16px"
+                    height="16px"
+                    class="ms-1"
+                  />
+                  <li class="text-black">عکاسی</li>
+                </div>
+              </ul>
+              <div class="btn-con">
+                <button class="btn-proj bgd-banafsh-md">شروع پروژه</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 px-lg-3">
+            <div class="box-price blaack">
+              <div class="popular bgd-banafsh-md">انتخاب رایج</div>
+              <span class="text-black">فریلنسری</span>
+              <div class="gp-title-price d-flex align-items-center">
+                <img src="assets/cash.png" alt="" width="35px" />
+                <span class="cost text-black">یک میلیون</span>
+              </div>
+              <p class="para2">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است.
+              </p>
+              <ul class="list-unstyled">
+                <div class="pedar8 d-flex align-items-center">
+                  <img
+                    src="assets/c-lit-banafsh.png"
+                    alt=""
+                    width="16px"
+                    height="16px"
+                    class="ms-1"
+                  />
+                  <li class="text-black">طراحی برند</li>
+                </div>
+                <div class="pedar8 d-flex align-items-center">
+                  <img
+                    src="assets/c-lit-banafsh.png"
+                    alt=""
+                    width="16px"
+                    height="16px"
+                    class="ms-1"
+                  />
+                  <li class="text-black">توسعه وب</li>
+                </div>
+                <div class="pedar8 d-flex align-items-center">
+                  <img
+                    src="assets/c-lit-banafsh.png"
+                    alt=""
+                    width="16px"
+                    height="16px"
+                    class="ms-1"
+                  />
+                  <li class="text-black">عکاسی</li>
+                </div>
+              </ul>
+              <div class="btn-con">
+                <button class="btn-proj bgd-banafsh-md">شروع پروژه</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 px-lg-3">
+            <div class="box-price">
+              <span class="text-black">فریلنسری</span>
+              <div class="gp-title-price d-flex align-items-center">
+                <img src="assets/cash.png" alt="" width="35px" />
+                <span class="cost text-black">یک میلیون</span>
+              </div>
+              <p class="para2">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است.
+              </p>
+              <ul class="list-unstyled">
+                <div class="pedar8 d-flex align-items-center">
+                  <img
+                    src="assets/c-lit-banafsh.png"
+                    alt=""
+                    width="16px"
+                    height="16px"
+                    class="ms-1"
+                  />
+                  <li class="text-black">طراحی برند</li>
+                </div>
+                <div class="pedar8 d-flex align-items-center">
+                  <img
+                    src="assets/c-lit-banafsh.png"
+                    alt=""
+                    width="16px"
+                    height="16px"
+                    class="ms-1"
+                  />
+                  <li class="text-black">توسعه وب</li>
+                </div>
+                <div class="pedar8 d-flex align-items-center">
+                  <img
+                    src="assets/c-lit-banafsh.png"
+                    alt=""
+                    width="16px"
+                    height="16px"
+                    class="ms-1"
+                  />
+                  <li class="text-black">عکاسی</li>
+                </div>
+              </ul>
+              <div class="btn-con">
+                <button class="btn-proj bgd-banafsh-md">شروع پروژه</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="price-gp d-flex flex-wrap justify-content-center">
         <div class="box-price col-4 col-sm-12 bg-white">
           <span class="text-black">فریلنسری</span>
           <div class="gp-title-price d-flex align-items-center">
@@ -676,7 +842,7 @@
             <button class="btn-proj bgd-banafsh-md">شروع پروژه</button>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- done  -->

@@ -2,6 +2,11 @@
     font-family: yekan;
     src: url(assets/Yekan.ttf);
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     direction: rtl;
     font-family: yekan;
@@ -9,7 +14,7 @@ body{
 }
 h1{
     font-weight: bold;
-    font-size: 5rem;
+    /* font-size: 5rem; */
     margin-bottom: 30px;
 }
 .pallete-open{
@@ -77,13 +82,11 @@ h1{
 }
 .general-left img{
     border-radius: 50%;
-    /* margin-right: 50px; */
 }
 .container-btn{
     border-radius: 50px;
     border: 2px solid #000;
     align-items: center;
-    /* padding: 0 40px; */
     width: 220px;
     background-color: white;
     box-shadow: -2px 4px 2px rgba(0, 0, 0, 0.375);
@@ -105,7 +108,6 @@ h1{
 /* قسمت ثابت */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0px -1px 13px rgb(223, 223, 223);
-    /* border-radius: 10px; */
 }
 
 /* قسمت متحرک */
@@ -115,7 +117,7 @@ h1{
 }
 /* for header ============================================= */
 header{
-    padding: 20px 80px;
+    /* padding: 20px 80px; */
     background-color: #fff;
     position: fixed;
     top: 0;
@@ -378,15 +380,11 @@ ul li a{
     border: 2px solid rgb(0, 0, 0);
     box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.375);
     background-color: white;
-    max-width: 300px;
     border-radius: 15px;
     padding: 0px 30px;
-    margin: 80px 0;
 }
 .blaack{
     border: 2px solid rgb(0, 0, 0);
-    margin-right: 30px;
-    margin-left: 30px;
     position: relative;
 }
 .blaack .popular{
@@ -766,40 +764,68 @@ footer{
 
 
 
-/* @media only screen and (min-width : 0){
+@media only screen and (min-width : 0){
+    h1{
+        font-size: 3rem;
+    }
+}
+/* sm  */
+@media only screen and (min-width : 576px) and (max-width : 768px){
+    h1{
+        font-size: 3rem;
+    }
+    .general-left{
+        position: static;
+    }
     .con1{
-        font-size: 12px;
+        position: static;
+        margin-top: -350px;
+    }
+    .con2{
+        position: static;
+       margin-top: -350px;
+    }
+}
+/* md  */
+@media only screen and (min-width : 769px) and (max-width : 992px){
+    h1{
+        font-size: 4rem;
+    }
+    .general-left{
+        position: relative;
+    }
+    .con1{
         position: absolute;
         left: -80px;
         top: 50%;
     }
     .con2{
-        font-size: 12px;
         position: absolute;
         right: 20px;
         bottom: 50px;
     }
 }
-@media only screen and (min-width : 576px) and (max-width : 768px){
+/* lg  */
+@media only screen and (min-width : 993px) and (max-width : 1200px){
+    h1{
+        font-size: 5rem;
+    }
+    .general-left{
+        position: relative;
+    }
     .con1{
-        font-size: 12px;
         position: absolute;
         left: -80px;
         top: 50%;
     }
     .con2{
-        font-size: 12px;
         position: absolute;
-        right: 0;
-        bottom: -120px;
+        right: 20px;
+        bottom: 50px;
     }
 }
-@media only screen and (min-width : 769px) and (max-width : 992px){
-    
+@media only screen and (min-width : 1200px){
+    h1{
+        font-size: 5rem;
+    }
 }
-@media only screen and (min-width : 993px) and (max-width : 1200px){
-    
-}
-@media only screen and (min-width : 0){
-    
-} */
