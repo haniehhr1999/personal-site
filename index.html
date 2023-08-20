@@ -39,43 +39,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-white">
-
-
     
-    <header class="d-flex justify-content-between align-items-center bg-white px-lg-5">
+    <header class="bg-white px-lg-5">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="d-flex justify-content-between align-items-center col-12">
             <div class="header-right d-flex align-items-center" >
               <i class="mdi mdi-menu banafsh-color-md"></i>
-              <!-- <label for="select"> -->
-                <i class="mdi mdi-palette banafsh-color-md"></i>
-              <!-- </label> -->
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="mdi mdi-palette banafsh-color-md"></i>
+                  </button>
+                    <select name="" id="select" class="bg-white text-black dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <option class="dropdown-item" value="purple" selected>purple</option>
+                      <option class="dropdown-item" value="red">red</option>
+                      <option class="dropdown-item" value="blue">blue</option>
+                      <option class="dropdown-item" value="green">green</option>
+                      <option class="dropdown-item" value="yellow">yellow</option>
+                      <option class="dropdown-item" value="pink">pink</option>
+                    </select>
+                </div>
               <span role="button" class="material-symbols-outlined banafsh-color-md sun d-none" >sunny</span >
               <span role="button" class="material-symbols-outlined banafsh-color-md moon" >dark_mode</span >
             </div>
-          </div>
-          <div class="col-6">
-            <div class="header-left">
-              <img src="assets/bg-banafsh-lit.png" alt="" width="200px" />
+            <div class="header-left text-end">
+                <img src="assets/bg-banafsh-lit.png" alt="" width="200px" />
             </div>
           </div>
         </div>
       </div>
     </header>
-
-
-    <div class="pallete-open">
-      <select name=""  id="select" class="bg-white text-black position-fixed">
-        <option value="purple" selected>purple</option>
-        <option value="red">red</option>
-        <option value="blue">blue</option>
-        <option value="green">green</option>
-        <option value="yellow">yellow</option>
-        <option value="pink">pink</option>
-      </select>
-    </div>
-
 
     <div class="menu-open bg-white">
       <i class="mdi mdi-close text-black"></i>
@@ -316,9 +309,6 @@
           </swiper-slide>
         </swiper-container>
       </div>
-
-    
-
     </div>
 
     <!-- done  -->
@@ -592,147 +582,7 @@
           </div>
         </div>
       </div>
-      <!-- <div class="price-gp d-flex flex-wrap justify-content-center">
-        <div class="box-price col-4 col-sm-12 bg-white">
-          <span class="text-black">فریلنسری</span>
-          <div class="gp-title-price d-flex align-items-center">
-            <img src="assets/cash.png" alt="" width="35px" />
-            <span class="cost text-black">یک میلیون</span>
-          </div>
-          <p class="para2">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-            استفاده از طراحان گرافیک است.
-          </p>
-          <ul class="list-unstyled">
-            <div class="pedar8 d-flex align-items-center">
-              <img
-                src="assets/c-lit-banafsh.png"
-                alt=""
-                width="16px"
-                height="16px"
-                class="ms-1"
-              />
-              <li class="text-black">طراحی برند</li>
-            </div>
-            <div class="pedar8 d-flex align-items-center">
-              <img
-                src="assets/c-lit-banafsh.png"
-                alt=""
-                width="16px"
-                height="16px"
-                class="ms-1"
-              />
-              <li class="text-black">توسعه وب</li>
-            </div>
-            <div class="pedar8 d-flex align-items-center">
-              <img
-                src="assets/c-lit-banafsh.png"
-                alt=""
-                width="16px"
-                height="16px"
-                class="ms-1"
-              />
-              <li class="text-black">عکاسی</li>
-            </div>
-          </ul>
-          <div class="btn-con">
-            <button class="btn-proj bgd-banafsh-md">شروع پروژه</button>
-          </div>
-        </div>
-        <div class="box-price col-4 col-sm-12 blaack bg-white">
-          <div class="popular bgd-banafsh-md">انتخاب رایج</div>
-          <span class="text-black">فریلنسری</span>
-          <div class="gp-title-price d-flex align-items-center">
-            <img src="assets/cash.png" alt="" width="35px" />
-            <span class="cost text-black">یک میلیون</span>
-          </div>
-          <p class="para2">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-            استفاده از طراحان گرافیک است.
-          </p>
-          <ul class="list-unstyled">
-            <div class="pedar8 d-flex align-items-center">
-              <img
-                src="assets/c-lit-banafsh.png"
-                alt=""
-                width="16px"
-                height="16px"
-                class="ms-1"
-              />
-              <li class="text-black">طراحی برند</li>
-            </div>
-            <div class="pedar8 d-flex align-items-center">
-              <img
-                src="assets/c-lit-banafsh.png"
-                alt=""
-                width="16px"
-                height="16px"
-                class="ms-1"
-              />
-              <li class="text-black">توسعه وب</li>
-            </div>
-            <div class="pedar8 d-flex align-items-center">
-              <img
-                src="assets/c-lit-banafsh.png"
-                alt=""
-                width="16px"
-                height="16px"
-                class="ms-1"
-              />
-              <li class="text-black">عکاسی</li>
-            </div>
-          </ul>
-          <div class="btn-con">
-            <button class="btn-proj bgd-banafsh-md">شروع پروژه</button>
-          </div>
-        </div>
-        <div class="box-price col-4 col-sm-12 bg-white">
-          <span class="text-black">فریلنسری</span>
-          <div class="gp-title-price d-flex align-items-center">
-            <img src="assets/cash.png" alt="" width="35px" />
-            <span class="cost text-black">یک میلیون</span>
-          </div>
-          <p class="para2">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-            استفاده از طراحان گرافیک است.
-          </p>
-          <ul class="list-unstyled">
-            <div class="pedar8 d-flex align-items-center">
-              <img
-                src="assets/c-lit-banafsh.png"
-                alt=""
-                width="16px"
-                height="16px"
-                class="ms-1"
-              />
-              <li class="text-black">طراحی برند</li>
-            </div>
-            <div class="pedar8 d-flex align-items-center">
-              <img
-                src="assets/c-lit-banafsh.png"
-                alt=""
-                width="16px"
-                height="16px"
-                class="ms-1"
-              />
-              <li class="text-black">توسعه وب</li>
-            </div>
-            <div class="pedar8 d-flex align-items-center">
-              <img
-                src="assets/c-lit-banafsh.png"
-                alt=""
-                width="16px"
-                height="16px"
-                class="ms-1"
-              />
-              <li class="text-black">عکاسی</li>
-            </div>
-          </ul>
-          <div class="btn-con">
-            <button class="btn-proj bgd-banafsh-md">شروع پروژه</button>
-          </div>
-        </div>
-      </div> -->
+      
     </div>
 
     <!-- done  -->
@@ -942,7 +792,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-    <!-- <script src="assets/bootstrap.bundle.min.js"></script> -->
+    <script src="assets/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

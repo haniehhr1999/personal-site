@@ -16,72 +16,9 @@ closeMenu.addEventListener('click' , function(){
     menuRight.style.opacity = 0
     menuRight.style.visibility = 'hidden'
 })
-// for sliders =========================================================================================
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    // direction: 'vertical',
-    loop: true,
-    loopedSlides:40,
-    loopPreventSliding: true ,
-    slidesPerView: "3",
-    maxBackFaceHiddenSlides : "10",
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.t1',
-      prevEl: '.t2',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
 
 
-// var arrR = document.querySelector('.arrR')
-// var arrL = document.querySelector('.arrL')
-// var boxSlider = document.querySelectorAll('.box-slider')
 
-// var x = 0
-// var y = 0
-// arrR.addEventListener('click' , function(){
-//     if ( x == 0 ) {
-//         x = 1
-//         y += 300
-//         boxSlider.forEach(item => {
-//             item.style.transform = `translateX(${y}px)`
-//         });
-//     } else if ( x == 1){
-//         x = 0
-//         y += 300
-//         boxSlider.forEach(item => {
-//             item.style.transform = `translateX(${y}px)`
-//         });
-//     }
-// })
-
-
-// arrL.addEventListener('click' , function(){
-//     if ( x == 0 ) {
-//         x = 1
-//         y -= 300
-//         boxSlider.forEach(item => {
-//             item.style.transform = `translateX(${y}px)`
-//         });
-//     } else if ( x == 1){
-//         x = 0
-//         y -= 300
-//         boxSlider.forEach(item => {
-//             item.style.transform = `translateX(${y}px)`
-//         });
-//     }
-// })
 // for resume =========================================================================================
 var item1 = document.querySelector('.item1')
 var item2 = document.querySelector('.item2')
@@ -269,10 +206,10 @@ const corrects = document.querySelectorAll('.list-unstyled img')
 const cashs = document.querySelectorAll('.gp-title-price img')
 const hovers = document.querySelectorAll('.hovers')
 
-iconPallete.addEventListener('click' , showOptionsSelect)
 function showOptionsSelect (){
     select.classList.toggle("show") 
 }
+iconPallete.addEventListener('click' , showOptionsSelect)
 
 function changMoon() {
     if (select.value == 'blue') {
@@ -801,6 +738,8 @@ sun.addEventListener('click' , function(){
         changSun()
     })
 })
+
+
 
 
 
