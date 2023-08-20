@@ -117,7 +117,6 @@ h1{
 }
 /* for header ============================================= */
 header{
-    /* padding: 20px 80px; */
     background-color: #fff;
     position: fixed;
     top: 0;
@@ -194,7 +193,60 @@ ul li a{
     margin: 7px 0;
 }
 
-/* for services ============================================================================== */
+/* for sliders 0 to md ============================================================================== */
+@media only screen and (min-width:0) and (max-width: 768px){
+    swiper-container {
+        width: 240px;
+        height: 320px;
+    }
+    
+    swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+    }
+    
+    swiper-slide:nth-child(1n) {
+        background-color: rgb(206, 17, 17);
+    }
+    
+    swiper-slide:nth-child(2n) {
+        background-color: rgb(0, 140, 255);
+    }
+    
+    swiper-slide:nth-child(3n) {
+        background-color: rgb(10, 184, 111);
+    }
+    
+    swiper-slide:nth-child(4n) {
+        background-color: rgb(211, 122, 7);
+    }
+    
+    swiper-slide:nth-child(5n) {
+        background-color: rgb(118, 163, 12);
+    }
+}
+/* for sliders md to infinite ======================================================================= */
+@media only screen and (min-width: 769px) {
+    swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* for services ===================================================================================== */
 .services{
     position: relative;
 }
@@ -216,14 +268,11 @@ ul li a{
     margin: 40px 0 30px 0;
 }
 .box-slider{
-    /* align-items: stretch; */
-    min-width: 300px ;
-    /* height: 321px; */
     background-color: #ffffff;
     border: #a800ba 2px solid;
     box-shadow: -3px 4px 2px rgba(0, 0, 0, 0.238);
     border-radius: 10px;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     padding: 40px 20px;
     transition: 0.8s ease;
 }
@@ -379,7 +428,7 @@ ul li a{
 .box-price{
     border: 2px solid rgb(0, 0, 0);
     box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.375);
-    background-color: white;
+    /* background-color: white; */
     border-radius: 15px;
     padding: 0px 30px;
 }
