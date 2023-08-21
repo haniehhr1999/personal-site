@@ -14,14 +14,9 @@ body{
 }
 h1{
     font-weight: bold;
-    /* font-size: 5rem; */
     margin-bottom: 30px;
 }
-/* .pallete-open{
-    margin-top: 95.763px;
-    height: 80px;
-    width: 80px;
-} */
+
 .general-txt{
     font-size: 2rem;
 }
@@ -31,10 +26,10 @@ h1{
     transition: 0.5s;
     cursor: pointer;
 }
-.grey{
+/* .text-black li{
     color: rgb(156, 156, 156);
     text-align: justify;
-}
+} */
 .general-btns{
     margin-top: 1rem;
     position: relative;
@@ -208,6 +203,9 @@ header .dropdown .btn-secondary {
     background-color: transparent;
     border-color: transparent;
 }
+.general-introduction{
+    margin-top: 120px;
+}
 /* for sliders 0 to md ============================================================================== */
 @media only screen and (min-width:0) and (max-width: 768px){
     swiper-container {
@@ -287,7 +285,6 @@ header .dropdown .btn-secondary {
     border: #a800ba 2px solid;
     box-shadow: -3px 4px 2px rgba(0, 0, 0, 0.238);
     border-radius: 10px;
-    /* margin: 0 10px; */
     padding: 40px 20px;
     transition: 0.8s ease;
 }
@@ -322,6 +319,10 @@ header .dropdown .btn-secondary {
 .services-slider button{
     background-color: transparent;
     border: none;
+}
+.services-btn{
+    border: none;
+    background-color: transparent;
 }
 .gp{
     display: flex;
